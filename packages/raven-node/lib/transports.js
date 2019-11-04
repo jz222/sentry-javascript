@@ -7,7 +7,7 @@ var timeoutReq = require('timed-out');
 var http = require('http');
 var https = require('https');
 
-var agentOptions = {keepAlive: true, maxSockets: 100};
+var agentOptions = {keepAlive: false, maxSockets: 100};
 var httpAgent = new http.Agent(agentOptions);
 var httpsAgent = new https.Agent(agentOptions);
 
